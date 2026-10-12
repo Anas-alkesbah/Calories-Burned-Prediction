@@ -46,9 +46,9 @@ gender = st.selectbox(
 
 # Convert gender to numerical value
 if gender == "Male":
-    gender_value = 1
-else:
     gender_value = 0
+else:
+    gender_value = 1
 
 # Prediction button
 if st.button("Predict Calories"):

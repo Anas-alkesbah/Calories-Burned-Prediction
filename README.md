@@ -1,10 +1,15 @@
-# Calories Burned Prediction App
+# Calories Burned Prediction
 
-## Project Description
+A Machine Learning application that predicts the number of calories burned during exercise based on user and activity information.
 
-This project is a Machine Learning application that predicts the number of calories burned based on user information and exercise data.
+The project uses a **Random Forest Regressor** and provides an interactive web interface built with **Streamlit**.
 
-The model was developed using Random Forest Regression and deployed as an interactive web application using Streamlit.
+## Features
+
+- Predict calories burned during exercise.
+- Interactive interface for entering user information.
+- Machine Learning model trained using exercise data.
+- Model evaluation using regression metrics.
 
 ## Input Features
 
@@ -16,13 +21,17 @@ The model was developed using Random Forest Regression and deployed as an intera
 - Heart Rate (bpm)
 - Body Temperature (°C)
 
-## Machine Learning Model
+## Model Performance
 
-The project uses a Random Forest Regressor to predict calories burned.
+The Random Forest Regressor achieved the following results on the test dataset:
 
-The trained model is saved as:
+| Metric | Score |
+|---|---:|
+| Mean Absolute Error (MAE) | 1.76 |
+| Mean Squared Error (MSE) | 7.83 |
+| R² Score | 0.9979 |
 
-model.pkl
+These results represent the model's performance on the test split used during development. Performance on new real-world data may differ.
 
 ## Technologies Used
 
@@ -35,14 +44,30 @@ model.pkl
 
 ## How to Run
 
-Install the required libraries:
+Install the required dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Then run the Streamlit application:
+Run the Streamlit application:
 
+```bash
 streamlit run app.py
+```
 
+## Project Structure
+
+- `app.py` — Streamlit application.
+- `model.pkl` — Saved Random Forest model.
+- `requirements.txt` — Project dependencies.
+- `task2.ipynb` — Data analysis, model training, and evaluation notebook.
+
+## Future Improvements
+
+- Improve model validation on unseen data.
+- Add visualizations for model performance.
+- Improve input validation and user experience.
 ## Prediction Example
 
 The application predicts the calories burned in kcal based on the entered user data.

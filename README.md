@@ -71,3 +71,6 @@ streamlit run app.py
 ## Prediction Example
 
 The application predicts the calories burned in kcal based on the entered user data.
+## Application Screenshot
+
+![Calories Burned Prediction App](app-screenshot.jpeg)
